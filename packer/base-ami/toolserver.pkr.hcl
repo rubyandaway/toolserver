@@ -36,10 +36,10 @@ source "amazon-ebs" "linux" {
 build {
   sources = ["source.amazon-ebs.linux"]
 
- # provisioner "shell" {
- #   scripts = [
- #     "files/init.sh",
- #  ]
- # }
+  provisioner "shell" {
+    scripts = [
+      "toolserver/packer/base-ami/provision.sh",
+   ]
+  }
 
 }
