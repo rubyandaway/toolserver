@@ -38,7 +38,7 @@ build {
 
   provisioner "shell" {
     scripts = [
-      "toolserver/packer/base-ami/provision.sh",
+      "./provision.sh",
    ]
   }
 
